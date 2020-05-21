@@ -1,2 +1,0 @@
-# FirstReactJS
-Created with CodeSandbox
