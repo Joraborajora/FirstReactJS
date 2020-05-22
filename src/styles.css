@@ -2,3 +2,16 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.btn--like {
+  background: blue;
+  outline: none;
+  border-radius: 5px;
+}
+
+.zero:hover,
+.btn--like:hover {
+  background: #ccc;
+  border-radius: 5px;
+  outline: none;
+}
