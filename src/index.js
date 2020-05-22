@@ -32,6 +32,9 @@ const movie = {
 
 function Image(props) {
   return <img width="100%" src={props.src} alt={props.alt} />;
+  // console.log ("Image props", props);
+  return <img src={props.src} alt={props.alt} />;
+
 }
 
 // function MovieItem(props) {
@@ -47,6 +50,7 @@ function Image(props) {
 // }
 
 class MovieItem extends React.Component {
+
   constructor() {
     super();
 
@@ -92,6 +96,18 @@ class MovieItem extends React.Component {
           </button>
         </div>
         {this.state.show ? <p>{overwiev}</p> : null}
+
+  render() {
+    const {
+      data: { title, vote, image }
+    } = this.props;
+    console.log(this);
+    return (
+      <div>
+        <Image src={image} alt={title} />
+        <p>{title}</p>
+        <p>{vote}</p>
+
       </div>
     );
   }
